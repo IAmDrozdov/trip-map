@@ -1,6 +1,7 @@
 check-shots/
 *.html
 !assets/*.html
+!docs/index.html
 __pycache__/
 node_modules/
 .DS_Store
