@@ -960,7 +960,7 @@ const map=L.map("map",{zoomControl:true,attributionControl:true});
 const dark=matchMedia("(prefers-color-scheme: dark)");
 let tiles=null;
 // Raster tiles: OSM standard by default (no API key). Dark theme = CSS filter on the tile pane. Override with meta.tileUrl / meta.tileAttribution.
-function setTiles(){if(META.tiles===false)return;if(tiles)map.removeLayer(tiles);tiles=L.tileLayer(META.tileUrl||"https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:META.tileAttribution||'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · фото: Wikimedia Commons'}).addTo(map);map.getPane("tilePane").classList.toggle("dark",dark.matches&&!META.tileUrl)}
+function setTiles(){if(META.tiles===false)return;if(tiles)map.removeLayer(tiles);tiles=L.tileLayer(META.tileUrl||"https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,crossOrigin:true,attribution:META.tileAttribution||'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · фото: Wikimedia Commons'}).addTo(map);map.getPane("tilePane").classList.toggle("dark",dark.matches&&!META.tileUrl)}
 map.createPane("base");map.getPane("base").style.zIndex=150;
 const baseR=L.canvas({pane:"base",padding:.5});let baseLayer=null;
 function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()}

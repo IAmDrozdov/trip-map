@@ -9,9 +9,13 @@ city trip into one self-contained, phone-friendly HTML map:
 - bottom-sheet layout on phones, three-column layout on desktop, light/dark themes.
 
 The AI agent does the research and writes `data.json`; the page is a fixed template. Born from planning a
-weekend in Copenhagen — that trip is included as the example.
+weekend in Copenhagen — that trip is included as the example and as the live demo.
 
-<p><img src="docs/preview-phone.png" width="260" alt="phone: place card"> <img src="docs/preview-route.png" width="260" alt="phone: route panel"></p>
+**Live demo:** [iamdrozdov.github.io/trip-map](https://iamdrozdov.github.io/trip-map/) — the Copenhagen example (open it on a phone too).
+
+![desktop: map, clusters, place card with photos, route panel](docs/desktop.jpg)
+
+![phone: place card · route with Google Maps / Share / Telegram · type filter](docs/phones.jpg)
 
 ## Use as a skill
 
