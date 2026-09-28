@@ -1,0 +1,1829 @@
+{
+ "meta": {
+  "title": "Copenhagen, 25–27 сентября",
+  "subtitle": "карта кандидатов",
+  "base": "Hotel Østerport",
+  "city": "København",
+  "storageKey": "cph2026",
+  "factsTitle": "Проверено 24.09 — что изменилось",
+  "facts": [
+   "<b>Отель:</b> Hotel Østerport, Oslo Plads 5. Из аэропорта прямой поезд до Østerport (~20 мин), до Louisiana тоже прямой поезд (~35 мин). До Nordhavn, Juno, Kastellet и Frederiksstaden можно дойти пешком.",
+   "<b>Последние дни выставок:</b> Degas' Obsession в Glyptotek и Lucian Freud в Louisiana идут до вс 27.09.",
+   "<b>Пт 25.09, 17–22:</b> открытие сезона в Kunsthal Charlottenborg у Nyhavn. Вход бесплатный, живая музыка.",
+   "<b>Cisternerne:</b> Marina Abramović, «Seven Deaths» (с Уиллемом Дефо), до 30.11, пт–вс 11–18.",
+   "<b>Parkmuseerne:</b> один билет за 345 DKK — SMK, Hirschsprung, Davids Samling, Rosenborg, Palmehuset (+2 музея не из списка).",
+   "<b>Tivoli закрыт</b> на ваши даты: летний сезон закончился 20.09, Halloween-сезон начинается 2.10.",
+   "<b>Louisiana:</b> Lucian Freud идёт до <b>вс 27.09</b> (последний день). В пятницу музей открыт до 22:00, сб–вс до 18:00.",
+   "<b>Vor Frelsers Kirke:</b> башня 9–20, 70 DKK, бронь рекомендуют (в выходные могут не пустить без брони). При дожде и сильном ветре её закрывают.",
+   "Все 7 ссылок друзей раскрыты: Nordhavn, Juno, Andersen &amp; Maillard (Ny Østergade), studio x kitchen, La Cabra, Ø12, Hart (Gl. Kongevej). Отмечены на карте как «ссылка друга».",
+   "Не найден: Italo Café. Atelier September в центре стоит по приблизительным координатам (Gothersgade 30)."
+  ],
+  "weather": [
+   {
+    "d": "Пт 25",
+    "t": "13–16°",
+    "r": "10% 🌧"
+   },
+   {
+    "d": "Сб 26",
+    "t": "8–17°",
+    "r": "20% 🌧"
+   },
+   {
+    "d": "Вс 27",
+    "t": "8–17°",
+    "r": "10% 🌧"
+   }
+  ]
+ },
+ "types": {
+  "sight": {
+   "l": "Достопримечательность",
+   "c": "#1F6F78"
+  },
+  "area": {
+   "l": "Район / прогулка",
+   "c": "#3D8B5A"
+  },
+  "bakery": {
+   "l": "Пекарня",
+   "c": "#C98F2A"
+  },
+  "cafe": {
+   "l": "Кофе / завтрак",
+   "c": "#8A5A2B"
+  },
+  "lunch": {
+   "l": "Обед / casual",
+   "c": "#D46A3A"
+  },
+  "dinner": {
+   "l": "Ужин",
+   "c": "#B5483A"
+  },
+  "bar": {
+   "l": "Бар (опционально)",
+   "c": "#8E4A8C"
+  },
+  "museum": {
+   "l": "Музей",
+   "c": "#3B5BA5"
+  },
+  "sauna": {
+   "l": "Сауна / купание",
+   "c": "#138FA6"
+  },
+  "transport": {
+   "l": "Прилёт / транзит",
+   "c": "#6B7785"
+  },
+  "gallery": {
+   "l": "Галерея / выставка",
+   "c": "#5A4FCF"
+  },
+  "niche": {
+   "l": "Нишевое место",
+   "c": "#D65A8C"
+  },
+  "hotel": {
+   "l": "Отель",
+   "c": "#E8B500"
+  },
+  "park": {
+   "l": "Parkmuseerne",
+   "c": "#2F6B4F"
+  }
+ },
+ "priorities": {
+  "1": "Ядро",
+  "2": "Сильный кандидат",
+  "3": "Если по пути",
+  "4": "Скорее пропустить"
+ },
+ "sources": {
+  "f": "Список друзей",
+  "m": "Ссылка друга (Maps)",
+  "a": "Добавлено при планировании",
+  "e": "Афиши выставок (сент. 2026)",
+  "t": "TikTok"
+ },
+ "places": [
+  {
+   "id": "hart",
+   "n": "Hart Bageri",
+   "a": "Gl. Kongevej 109, Frederiksberg",
+   "lat": 55.6753846,
+   "lng": 12.5455049,
+   "pid": "ChIJY76U8FJTUkYRHJPvLA_0K4U",
+   "t": "bakery",
+   "d": "Frederiksberg",
+   "p": 2,
+   "s": "m",
+   "h": "ежедн. 7:30–18",
+   "x": "Кардамонный круассан. Эту точку друг прислал ссылкой."
+  },
+  {
+   "id": "rug",
+   "n": "Rug Bakery",
+   "a": "Tietgensgade 39 (Villa Copenhagen)",
+   "lat": 55.6712708,
+   "lng": 12.567272,
+   "pid": "ChIJwzY0RllTUkYRPqjsIApACpw",
+   "t": "bakery",
+   "d": "Vesterbro",
+   "p": 3,
+   "s": "f",
+   "h": "пт–вс 7–16",
+   "x": "В отеле Villa у Центрального вокзала. Удобно утром в пятницу."
+  },
+  {
+   "id": "juno",
+   "n": "Juno the Bakery",
+   "a": "Århusgade 48, Østerbro",
+   "lat": 55.7061815,
+   "lng": 12.5818152,
+   "pid": "ChIJF5yoNfBSUkYRFjOQZdocHAE",
+   "t": "bakery",
+   "d": "Østerbro",
+   "p": 2,
+   "s": "m",
+   "h": "пт–сб 7:30–18 · вс 7:30–16 · пн закрыто",
+   "x": "Самая известная пекарня. Очередь с 8 утра, сидеть можно только снаружи. Точка старта для Nordhavn."
+  },
+  {
+   "id": "apotek",
+   "n": "Apotek 57",
+   "a": "Fredericiagade 57",
+   "lat": 55.6869872,
+   "lng": 12.5857865,
+   "pid": "ChIJMVBVX5NTUkYRj4MX5a_xqIQ",
+   "t": "bakery",
+   "d": "Indre By",
+   "p": 3,
+   "s": "f",
+   "h": "пт 8–16 · сб–вс 9–16",
+   "x": "Красивый зал над Frama. Только фильтр-кофе."
+  },
+  {
+   "id": "meyers",
+   "n": "Meyers Bageri",
+   "a": "Jægersborggade 9",
+   "lat": 55.691859,
+   "lng": 12.5449609,
+   "pid": "ChIJZxwgla1TUkYRrwIwj0hyQ1o",
+   "t": "bakery",
+   "d": "Nørrebro",
+   "p": 2,
+   "s": "f",
+   "h": "пт 7–18 · сб–вс 7–16",
+   "x": "Kanelsnurre. На вынос, потом прогулка по Assistens."
+  },
+  {
+   "id": "rondo",
+   "n": "Rondo",
+   "a": "Sjællandsgade 7",
+   "lat": 55.6932303,
+   "lng": 12.5522123,
+   "pid": "ChIJsxKl4HpTUkYRpHxfIcJrtnI",
+   "t": "bakery",
+   "d": "Nørrebro",
+   "p": 3,
+   "s": "f",
+   "h": "пт 7:30–17 · сб–вс 8–16",
+   "x": "Сильная солёная выпечка и BMO."
+  },
+  {
+   "id": "benji",
+   "n": "Bageriet Benji",
+   "a": "Mjølnerparken 52",
+   "lat": 55.7038803,
+   "lng": 12.5417881,
+   "pid": "ChIJF9KsPadTUkYRg7L6BRhjBI8",
+   "t": "bakery",
+   "d": "Nørrebro",
+   "p": 3,
+   "s": "f",
+   "h": "пт 8–17 · сб–вс 9–17",
+   "x": "Бывший пекарь Noma. Далековато на севере, в выходные очень людно."
+  },
+  {
+   "id": "am",
+   "n": "Andersen & Maillard",
+   "a": "Ny Østergade 15",
+   "lat": 55.6813728,
+   "lng": 12.5824663,
+   "pid": "ChIJVxt9R5pTUkYRG_jCZuNMes0",
+   "t": "bakery",
+   "d": "Indre By",
+   "p": 2,
+   "s": "m",
+   "h": "пт 7–18 · сб–вс 8–18",
+   "x": "Ссылка друга ведёт на этот филиал в центре. Сидячих мест внутри нет."
+  },
+  {
+   "id": "lille",
+   "n": "Lille Bakery",
+   "a": "Refshalevej 213B",
+   "lat": 55.6900548,
+   "lng": 12.6133271,
+   "pid": "ChIJT8WSyNdSUkYROeBgECLWOmk",
+   "t": "bakery",
+   "d": "Refshaleøen",
+   "p": 2,
+   "s": "f",
+   "h": "ср–вс 8–17",
+   "x": "Лучшая остановка на еду на Refshaleøen, кофе от Prolog."
+  },
+  {
+   "id": "lacabra",
+   "n": "La Cabra",
+   "a": "Møntergade 3A",
+   "lat": 55.6815858,
+   "lng": 12.5790398,
+   "pid": "ChIJY0fu5htTUkYRO2tdIjbz2F4",
+   "t": "cafe",
+   "d": "Indre By",
+   "p": 2,
+   "s": "m",
+   "h": "пт 8–18 · сб–вс 9–17",
+   "x": "Возможно, та самая точка «кофе оч хороший тут». Specialty, V60."
+  },
+  {
+   "id": "darcys",
+   "n": "Darcy's Kaffe",
+   "a": "Rantzausgade 2",
+   "lat": 55.6853205,
+   "lng": 12.5532861,
+   "pid": "ChIJIzC3T6FTUkYRxxYd67aAGtQ",
+   "t": "cafe",
+   "d": "Nørrebro",
+   "p": 3,
+   "s": "f",
+   "h": "пт 7:30–17 · сб–вс 9–16:30",
+   "x": "Сразу за Dronning Louises Bro."
+  },
+  {
+   "id": "prolog",
+   "n": "Prolog Coffee Bar",
+   "a": "Høkerboderne 16, Kødbyen",
+   "lat": 55.6682905,
+   "lng": 12.5575308,
+   "pid": "ChIJRzBmiXNTUkYRqRXF2ZEdEkg",
+   "t": "cafe",
+   "d": "Vesterbro",
+   "p": 2,
+   "s": "f",
+   "h": "пт 7–18 · сб–вс 8–18",
+   "x": "Сильнейший specialty-кофе в городе. Стоит в Meatpacking."
+  },
+  {
+   "id": "sonny",
+   "n": "Sonny",
+   "a": "Rådhusstræde 5",
+   "lat": 55.6769645,
+   "lng": 12.5742551,
+   "pid": "ChIJOyzDdhFTUkYRdBMFJJDRXJA",
+   "t": "cafe",
+   "d": "Indre By",
+   "p": 3,
+   "s": "f",
+   "h": "пт 8–17 · сб–вс 8:30–17",
+   "x": "Завтраки, маленький зал."
+  },
+  {
+   "id": "delambo",
+   "n": "Delambò",
+   "a": "Grønnegade 27",
+   "lat": 55.6813217,
+   "lng": 12.5830236,
+   "pid": "ChIJtcnsGIpTUkYRuBSMC1DgPZs",
+   "t": "cafe",
+   "d": "Indre By",
+   "p": 3,
+   "s": "f",
+   "h": "часы не указаны, проверить",
+   "x": "Уютное место для завтрака в центре."
+  },
+  {
+   "id": "sxk",
+   "n": "studio x kitchen",
+   "a": "Dronningens Tværgade 52",
+   "lat": 55.6846875,
+   "lng": 12.5835836,
+   "pid": "ChIJWdmR7RpTUkYRXLcQj59ermY",
+   "t": "cafe",
+   "d": "Indre By",
+   "p": 2,
+   "s": "m",
+   "h": "ежедн. 8:30–16:30",
+   "x": "Folded eggs с анчоусами и фокачча. Через 30 мин после открытия уже очередь."
+  },
+  {
+   "id": "original",
+   "n": "Original Coffee Kongensgade",
+   "a": "Store Kongensgade 124",
+   "lat": 55.6889378,
+   "lng": 12.5897343,
+   "pid": "ChIJk85nwwhTUkYRZsMzon1U1Ps",
+   "t": "cafe",
+   "d": "Indre By",
+   "p": 4,
+   "s": "f",
+   "h": "пт 7–18 · сб–вс 8–18",
+   "x": "Сетевая, ничего особенного. Только если по пути."
+  },
+  {
+   "id": "dallas",
+   "n": "Dallas Coffee",
+   "a": "Slagelsegade 2, Østerbro",
+   "lat": 55.6981139,
+   "lng": 12.5791895,
+   "pid": "ChIJqwf71lBTUkYRVUYdhpbd-e4",
+   "t": "cafe",
+   "d": "Østerbro",
+   "p": 3,
+   "s": "f",
+   "h": "ежедн. 8–15",
+   "x": "Крошечная кофейня, хорошие flat white."
+  },
+  {
+   "id": "atelier",
+   "n": "Atelier September",
+   "a": "Gothersgade 30",
+   "lat": 55.68265,
+   "lng": 12.58168,
+   "pid": "",
+   "t": "cafe",
+   "d": "Indre By",
+   "p": 3,
+   "s": "f",
+   "h": "проверить",
+   "x": "Координаты приблизительные."
+  },
+  {
+   "id": "kafeteria",
+   "n": "Kafeteria (SMK) → Magnolia",
+   "a": "Sølvgade 48–50, SMK",
+   "lat": 55.6890353,
+   "lng": 12.5790335,
+   "pid": "ChIJuTSr9hxTUkYRUhXQF4avOQA",
+   "t": "cafe",
+   "d": "Indre By",
+   "p": 4,
+   "s": "f",
+   "h": "по часам музея",
+   "x": "С окт. 2025 новые владельцы, отзывы слабые."
+  },
+  {
+   "id": "roe",
+   "n": "Louise Roe / The Roe Bar",
+   "a": "Vognmagergade 9",
+   "lat": 55.682482,
+   "lng": 12.5781101,
+   "pid": "ChIJT54CUJ5TUkYRS3eWEkvO0uQ",
+   "t": "cafe",
+   "d": "Indre By",
+   "p": 3,
+   "s": "f",
+   "h": "пт 8–18 · сб–вс 10–17",
+   "x": "Дизайн-магазин с кафе. Подходит под правило «маленький датский дизайн по пути»."
+  },
+  {
+   "id": "o12",
+   "bk": {
+    "k": "t",
+    "l": "Забронировать стол",
+    "u": "https://www.sevenrooms.com/reservations/o12coffeeandeatery"
+   },
+   "n": "Ø12 Coffee & Eatery",
+   "a": "H. C. Andersens Blvd. 8",
+   "lat": 55.6771689,
+   "lng": 12.5659769,
+   "pid": "ChIJJc666RBTUkYRbvLuXTnZ5O8",
+   "t": "cafe",
+   "d": "Indre By",
+   "p": 3,
+   "s": "m",
+   "h": "пт 7–16 · сб–вс 7–17",
+   "x": "Бранч-плато. Лучше бронировать. Точка из ссылки друга."
+  },
+  {
+   "id": "s1612",
+   "bk": {
+    "k": "t",
+    "l": "Забронировать стол",
+    "u": "https://www.sixteentwelve.dk/"
+   },
+   "n": "The Sixteen Twelve",
+   "a": "Jægersborggade 8",
+   "lat": 55.6919857,
+   "lng": 12.5451002,
+   "pid": "ChIJY-4VYZlTUkYRmZP0-kxTxuA",
+   "t": "lunch",
+   "d": "Nørrebro",
+   "p": 4,
+   "s": "f",
+   "h": "9–16 · ужин пт–сб 17–22",
+   "x": "Свежие отзывы смешанные."
+  },
+  {
+   "id": "beitsalma",
+   "n": "BeitSalma",
+   "a": "Fælledvej 13",
+   "lat": 55.6894177,
+   "lng": 12.5600168,
+   "pid": "ChIJQwvwDDpTUkYRMQ-jlvU6uIQ",
+   "t": "lunch",
+   "d": "Nørrebro",
+   "p": 3,
+   "s": "f",
+   "h": "проверить",
+   "x": "Левантийская кухня, красивый интерьер."
+  },
+  {
+   "id": "palazzo",
+   "bk": {
+    "k": "t",
+    "l": "Забронировать стол",
+    "u": "https://palazzodiner.com/book-table/"
+   },
+   "n": "Palazzo Diner",
+   "a": "Axeltorv 6",
+   "lat": 55.6763599,
+   "lng": 12.5643953,
+   "pid": "ChIJWdUXa7dTUkYR4Whp4eu_D5Y",
+   "t": "lunch",
+   "d": "Indre By",
+   "p": 3,
+   "s": "f",
+   "h": "пт 12–02 · сб 12–15:30, 17–02 · вс 12–22:30",
+   "x": "Итальянский сет от 200 DKK. Бронь нужна. Работает в вс вечером."
+  },
+  {
+   "id": "diamond",
+   "n": "Diamond Slice",
+   "a": "Blågårdsgade 27",
+   "lat": 55.686169,
+   "lng": 12.558026,
+   "pid": "ChIJX8VN1UlTUkYRAHz-AKxxdgU",
+   "t": "lunch",
+   "d": "Nørrebro",
+   "p": 3,
+   "s": "f",
+   "h": "пт–сб 12–23 · вс 12–22",
+   "x": "Пицца в NY-стиле кусками, hot honey."
+  },
+  {
+   "id": "reffen",
+   "n": "Reffen",
+   "a": "Refshalevej 167",
+   "lat": 55.6936333,
+   "lng": 12.6082318,
+   "pid": "ChIJJ9EDaddSUkYRoJpUuE6-59w",
+   "t": "lunch",
+   "d": "Refshaleøen",
+   "p": 2,
+   "s": "f",
+   "h": "ежедн. 11–21:30",
+   "x": "Стрит-фуд у воды: закат, костры. Бронь не нужна."
+  },
+  {
+   "id": "barlie",
+   "n": "Bottega Barlie",
+   "a": "Fredericiagade 78",
+   "lat": 55.6872162,
+   "lng": 12.5856339,
+   "pid": "ChIJk22jy6tTUkYRwnyT2qK-xu0",
+   "t": "lunch",
+   "d": "Indre By",
+   "p": 3,
+   "s": "f",
+   "h": "пт 7:30–24 · сб 9–24 · вс 10–16",
+   "x": "Хороший хлеб и рыба. Сервис хвалят не все."
+  },
+  {
+   "id": "banchina",
+   "n": "La Banchina",
+   "a": "Refshalevej 141",
+   "lat": 55.6893015,
+   "lng": 12.6109311,
+   "pid": "ChIJe2R04ddSUkYRPspah4LjBEs",
+   "t": "lunch",
+   "d": "Refshaleøen",
+   "p": 2,
+   "s": "a",
+   "h": "ежедн. 8–20",
+   "x": "Деревянный причал, можно окунуться в гавань. Атмосферное место для одного бокала вина."
+  },
+  {
+   "id": "apollo",
+   "n": "Apollo Bar",
+   "a": "Nyhavn 2 (Charlottenborg)",
+   "lat": 55.6800229,
+   "lng": 12.5883171,
+   "pid": "ChIJLerE_xdTUkYRPqu7rhma1X0",
+   "t": "lunch",
+   "d": "Indre By",
+   "p": 3,
+   "s": "f",
+   "h": "вт–вс 9:30–18 (только днём)",
+   "x": "Друзья поставили в ужины, но вечером закрыто. Подходит как обед у Nyhavn."
+  },
+  {
+   "id": "calma",
+   "bk": {
+    "k": "t",
+    "l": "Забронировать стол",
+    "u": "https://calmacph.dk/"
+   },
+   "n": "Calma",
+   "a": "Jægersborggade 34",
+   "lat": 55.692975,
+   "lng": 12.5438177,
+   "pid": "ChIJBaNmBoJTUkYRrsaRZR-yjgw",
+   "t": "dinner",
+   "d": "Nørrebro",
+   "p": 1,
+   "s": "f",
+   "h": "пт–сб 12–24 · вс закрыто",
+   "x": "Отмечен гидом Michelin, открытая кухня. Лучший ужин из списка, бронь обязательна.",
+   "b": 1
+  },
+  {
+   "id": "cleo",
+   "bk": {
+    "k": "t",
+    "l": "Забронировать стол",
+    "u": "https://restaurantcleo.dk/"
+   },
+   "n": "Cleo",
+   "a": "Rantzausgade 58B",
+   "lat": 55.6878264,
+   "lng": 12.5464077,
+   "pid": "ChIJ7ze9DX9TUkYRvWdzxtad290",
+   "t": "dinner",
+   "d": "Nørrebro",
+   "p": 2,
+   "s": "f",
+   "h": "ежедн. 17:30–24",
+   "x": "Small plates, сет из 8 подач, атмосфера для свидания. Работает в вс.",
+   "b": 1
+  },
+  {
+   "id": "amore",
+   "bk": {
+    "k": "t",
+    "l": "Забронировать стол",
+    "u": "https://www.bar-amore.dk/"
+   },
+   "n": "Bar Amore",
+   "a": "Gl. Kongevej 74D",
+   "lat": 55.6742547,
+   "lng": 12.551785,
+   "pid": "ChIJ6zYWBwBTUkYR7v-PeoKncI4",
+   "t": "dinner",
+   "d": "Frederiksberg",
+   "p": 3,
+   "s": "f",
+   "h": "пт–сб 17:30–02 · вс–пн закрыто",
+   "x": "Итальянская кухня, небольшие порции.",
+   "b": 1
+  },
+  {
+   "id": "fabro",
+   "n": "Fabro",
+   "a": "Borgergade 134",
+   "lat": 55.6866065,
+   "lng": 12.5878026,
+   "pid": "ChIJP5D1Lx9TUkYRXiEB-uVaSG0",
+   "t": "dinner",
+   "d": "Indre By",
+   "p": 3,
+   "s": "f",
+   "h": "пт–сб 12–22 · вс–пн закрыто",
+   "x": "Паста без брони, бывает очередь. Простой вариант для уставшего вечера."
+  },
+  {
+   "id": "goldie",
+   "bk": {
+    "k": "t",
+    "l": "Забронировать стол",
+    "u": "https://www.elgoldie.dk/"
+   },
+   "n": "el Goldie",
+   "a": "Griffenfeldsgade 22",
+   "lat": 55.6883896,
+   "lng": 12.5545142,
+   "pid": "ChIJyTKD9cNTUkYRXPIqTTk0l_w",
+   "t": "dinner",
+   "d": "Nørrebro",
+   "p": 3,
+   "s": "f",
+   "h": "пт–сб 17–24 · вс закрыто",
+   "x": "Мексиканская кухня, только вечером (друзья записали в обеды)."
+  },
+  {
+   "id": "rascal",
+   "n": "Rascal",
+   "a": "H. C. Ørsteds Vej 38",
+   "lat": 55.680008,
+   "lng": 12.548716,
+   "pid": "ChIJz_tl7D1TUkYRvPgP7uWw3J0",
+   "t": "bar",
+   "d": "Frederiksberg",
+   "p": 4,
+   "s": "f",
+   "h": "пт–сб 15–24 · вс закрыто",
+   "x": "Бар натурального вина."
+  },
+  {
+   "id": "pompette",
+   "n": "Pompette",
+   "a": "Møllegade 3",
+   "lat": 55.690513,
+   "lng": 12.5553376,
+   "pid": "ChIJPSaZ6nFTUkYRs6cL5bZc8q4",
+   "t": "bar",
+   "d": "Nørrebro",
+   "p": 3,
+   "s": "f",
+   "h": "ежедн. 12–24",
+   "x": "Вино пяти цветов, по одному на выбор. Годится для одного бокала после Calma или Cleo."
+  },
+  {
+   "id": "louisiana",
+   "bk": {
+    "k": "k",
+    "l": "Купить билет",
+    "u": "https://billet.louisiana.dk/en/tickets"
+   },
+   "n": "Louisiana Museum",
+   "a": "Gl. Strandvej 13, Humlebæk",
+   "lat": 55.969549,
+   "lng": 12.542784,
+   "pid": "ChIJq5pUwwc3UkYRTpARr0S5L2o",
+   "t": "museum",
+   "d": "Humlebæk",
+   "p": 1,
+   "s": "f",
+   "h": "пт 11–22 · сб–вс 11–18",
+   "ev": "Lucian Freud до вс 27.09 (последние дни) · Arthur Jafa: APEX до 27.09 · Tracey Emin только с 7.11",
+   "x": "Lucian Freud (фигуратив, как ты любишь) до 27.09. Поезд ~40 мин до Humlebæk, потом 10–15 мин пешком. В пятницу открыт до 22: можно успеть к закату над Øresund.",
+   "b": 0,
+   "far": true
+  },
+  {
+   "id": "glypto",
+   "bk": {
+    "k": "k",
+    "l": "Купить билет",
+    "u": "https://billet.glyptoteket.dk/en/tickets"
+   },
+   "n": "Ny Carlsberg Glyptotek",
+   "a": "Dantes Plads 7",
+   "lat": 55.67298,
+   "lng": 12.572543,
+   "pid": "ChIJfXQRBBNTUkYRoec4408un1k",
+   "t": "museum",
+   "d": "Indre By",
+   "p": 2,
+   "s": "a",
+   "h": "вт–вс 10–17",
+   "ev": "Degas' Obsession до вс 27.09 (последние дни) · Gauguin & Kihara до 6.12 · скульптуры Barye",
+   "x": "Античная скульптура, Роден, Дега, Зимний сад. Лучший городской музей на случай дождя.",
+   "w": "Ny Carlsberg Glyptotek"
+  },
+  {
+   "id": "design",
+   "bk": {
+    "k": "k",
+    "l": "Купить билет",
+    "u": "https://shop.designmuseum.dk/?lang=en"
+   },
+   "n": "Designmuseum Danmark",
+   "a": "Bredgade 68",
+   "lat": 55.6865563,
+   "lng": 12.5928422,
+   "pid": "ChIJMTzE6yFTUkYR90_sHEhzRqc",
+   "t": "museum",
+   "d": "Indre By",
+   "p": 3,
+   "s": "f",
+   "h": "вт–вс 10–18",
+   "ev": "Nikoline Liv Andersen: The Eternal Smile (текстиль) до 27.09 · Kontrapunkt до 18.10",
+   "x": "Хороший магазин с датскими дизайн-мелочами.",
+   "w": "Designmuseum Danmark"
+  },
+  {
+   "id": "cc",
+   "bk": {
+    "k": "k",
+    "l": "Билеты",
+    "u": "https://copenhagencontemporary.org/en/visit/"
+   },
+   "n": "Copenhagen Contemporary",
+   "a": "Refshalevej 173A",
+   "lat": 55.6935405,
+   "lng": 12.613569,
+   "pid": "ChIJ_TjiSjtTUkYREOQrVfycMFU",
+   "t": "museum",
+   "d": "Refshaleøen",
+   "p": 3,
+   "s": "f",
+   "h": "вт–вс 11–18",
+   "ev": "Camille Henrot: Paper Planes до 31.12",
+   "x": "Концептуальный контемпорари. Только если уже на острове и захочется."
+  },
+  {
+   "id": "bakkehuset",
+   "n": "Bakkehuset",
+   "a": "Rahbeks Allé 23",
+   "lat": 55.6683153,
+   "lng": 12.532141,
+   "pid": "ChIJc53oB5pTUkYRUt8rLORRayg",
+   "t": "museum",
+   "d": "Frederiksberg",
+   "p": 4,
+   "s": "f",
+   "h": "проверить",
+   "x": "Маленький дом-музей, сад бесплатный."
+  },
+  {
+   "id": "nyhavn",
+   "n": "Nyhavn",
+   "a": "Nyhavn",
+   "lat": 55.679776,
+   "lng": 12.5913041,
+   "pid": "ChIJr21nqiJTUkYR6-rlKAmgwpk",
+   "t": "sight",
+   "d": "Indre By",
+   "p": 1,
+   "s": "a",
+   "h": "всегда",
+   "x": "Прогуляться, но не есть здесь. Утром меньше людей.",
+   "w": "Nyhavn"
+  },
+  {
+   "id": "saviour",
+   "bk": {
+    "k": "t",
+    "l": "Билет в башню (слот)",
+    "u": "https://billetto.dk/e/vor-frelsers-kirkes-tarn-the-tower-of-our-saviour-s-church-billetter-562821"
+   },
+   "n": "Vor Frelsers Kirke (башня)",
+   "a": "Sankt Annæ Gade 29",
+   "lat": 55.6729387,
+   "lng": 12.5942102,
+   "pid": "ChIJye06RjlTUkYRK7RPt-oBGME",
+   "t": "sight",
+   "d": "Christianshavn",
+   "p": 1,
+   "s": "a",
+   "h": "башня 9–20 · 70 DKK",
+   "x": "400 ступеней, последние 150 по внешней спирали. Одна смотровая на всю поездку: эта лучше Rundetårn.",
+   "b": 1,
+   "w": "Church of Our Saviour, Copenhagen"
+  },
+  {
+   "id": "tivoli",
+   "n": "Tivoli (закрыт)",
+   "a": "Vesterbrogade 3",
+   "lat": 55.6736629,
+   "lng": 12.5682338,
+   "pid": "ChIJ8-r2gBJTUkYRsCcLtQ0Ltdk",
+   "t": "sight",
+   "d": "Indre By",
+   "p": 4,
+   "s": "a",
+   "h": "закрыт 21.09–1.10",
+   "x": "На ваши даты не работает. Убираю из плана.",
+   "w": "Tivoli Gardens",
+   "closed": 1
+  },
+  {
+   "id": "rosenborg",
+   "bk": {
+    "k": "k",
+    "l": "Билет Parkmuseerne",
+    "u": "https://www.parkmuseerne.dk/en/kob-billet/"
+   },
+   "n": "Rosenborg",
+   "a": "Øster Voldgade 4A",
+   "lat": 55.6858274,
+   "lng": 12.5772687,
+   "pid": "ChIJHVOeQhtTUkYRPBsoRTOcNVI",
+   "t": "park",
+   "d": "Indre By",
+   "p": 3,
+   "s": "a",
+   "h": "10–17 · вход по тайм-слотам",
+   "x": "Снаружи с садом достаточно, внутрь по желанию.",
+   "w": "Rosenborg Castle",
+   "ev": "Вход по общему билету Parkmuseerne: 345 DKK на 6 музеев (SMK, Hirschsprung, Davids Samling, Rosenborg, Arbejdermuseet, Музей естественной истории) + Palmehuset, каждый по разу, год с первого визита"
+  },
+  {
+   "id": "kings",
+   "n": "Kongens Have",
+   "a": "Øster Voldgade 4A",
+   "lat": 55.6852905,
+   "lng": 12.5798452,
+   "pid": "ChIJHVOeQhtTUkYRaKzp1xE05Q0",
+   "t": "sight",
+   "d": "Indre By",
+   "p": 2,
+   "s": "a",
+   "h": "7–22",
+   "x": "Сад у Rosenborg, хорошее место посидеть с кофе.",
+   "w": "Rosenborg Castle Gardens"
+  },
+  {
+   "id": "rundetarn",
+   "n": "Rundetårn",
+   "a": "Købmagergade 52A",
+   "lat": 55.681347,
+   "lng": 12.57573,
+   "pid": "ChIJoZv7gxBTUkYRN6Q-o22fOuc",
+   "t": "sight",
+   "d": "Indre By",
+   "p": 3,
+   "s": "a",
+   "h": "10–20",
+   "x": "Спиральный пандус внутри. Брать, только если Vor Frelsers не получится.",
+   "w": "Rundetaarn"
+  },
+  {
+   "id": "frederiks",
+   "n": "Marmorkirken",
+   "a": "Frederiksgade 4",
+   "lat": 55.685078,
+   "lng": 12.5895549,
+   "pid": "ChIJvYWnuhhTUkYR3m95N7vDrmo",
+   "t": "sight",
+   "d": "Indre By",
+   "p": 2,
+   "s": "a",
+   "h": "пт 12–17 · сб 10–17 · вс 13–17",
+   "x": "Мраморная церковь с куполом, прямая ось на Amalienborg и Оперу.",
+   "w": "Frederik's Church"
+  },
+  {
+   "id": "amalienborg",
+   "n": "Amalienborg",
+   "a": "Amalienborg Slotsplads",
+   "lat": 55.6840588,
+   "lng": 12.5930201,
+   "pid": "ChIJcwY-NiJTUkYRP1UVnat_8Vw",
+   "t": "sight",
+   "d": "Indre By",
+   "p": 2,
+   "s": "a",
+   "h": "площадь открыта всегда · смена караула в 12:00",
+   "x": "Площадь стоит пройти, во дворцы заходить не обязательно.",
+   "w": "Amalienborg"
+  },
+  {
+   "id": "kastellet",
+   "n": "Kastellet",
+   "a": "Gl. Hovedvagt, Kastellet 1",
+   "lat": 55.691376,
+   "lng": 12.594301,
+   "pid": "ChIJecok-N9SUkYRM2v7tTvxyPg",
+   "t": "sight",
+   "d": "Indre By",
+   "p": 3,
+   "s": "a",
+   "h": "6–20",
+   "x": "Крепость-звезда с валами, тихая прогулка.",
+   "w": "Kastellet, Copenhagen"
+  },
+  {
+   "id": "mermaid",
+   "n": "Den Lille Havfrue",
+   "a": "Langelinie",
+   "lat": 55.69286,
+   "lng": 12.5992828,
+   "pid": "ChIJAyFCjeuQTEYRPB41ogyQqN8",
+   "t": "sight",
+   "d": "Østerbro",
+   "p": 4,
+   "s": "a",
+   "h": "всегда",
+   "x": "Только если по пути вдоль воды.",
+   "w": "The Little Mermaid (statue)"
+  },
+  {
+   "id": "assistens",
+   "n": "Assistens Kirkegård",
+   "a": "Kapelvej 2",
+   "lat": 55.6910102,
+   "lng": 12.5501533,
+   "pid": "ChIJO9KdFKxTUkYR6_1IrFJ9jgY",
+   "t": "sight",
+   "d": "Nørrebro",
+   "p": 2,
+   "s": "a",
+   "h": "7–22",
+   "x": "Кладбище-парк: Андерсен, Кьеркегор.",
+   "w": "Assistens Cemetery (Copenhagen)"
+  },
+  {
+   "id": "superkilen",
+   "n": "Superkilen",
+   "a": "Nørrebrogade 210",
+   "lat": 55.7013424,
+   "lng": 12.5426383,
+   "pid": "ChIJzRCsrE1SUkYRxGJPTwVjwO0",
+   "t": "sight",
+   "d": "Nørrebro",
+   "p": 2,
+   "s": "a",
+   "h": "24/7 · бесплатно",
+   "x": "Парк-манифест BIG и Topotek 1: три зоны — Красная площадь, Чёрный рынок с белыми полосами и Зелёный парк, плюс объекты из 60 стран, которые выбрали жители района. Очень фотогенично. Рядом Bageriet Benji, от Jægersborggade 10 минут пешком.",
+   "w": "Superkilen"
+  },
+  {
+   "id": "grundtvig",
+   "n": "Grundtvigs Kirke",
+   "a": "På Bjerget 14B, Bispebjerg",
+   "lat": 55.7166277,
+   "lng": 12.534012,
+   "pid": "ChIJTYMCNVJSUkYRSfuN35R3Hcg",
+   "t": "sight",
+   "d": "Bispebjerg",
+   "p": 2,
+   "s": "a",
+   "h": "пт 10–11:30 и 14–15:45 · сб закрыто · вс 12:30–15:45",
+   "x": "Экспрессионистская церковь-«орган» из 6 миллионов жёлтых кирпичей (1921–40). Внутри огромный светлый неф почти без декора. Далеко на севере, от Superkilen 25 минут пешком или автобус. Учти: в субботу закрыта, в пятницу перерыв с 11:30 до 14:00.",
+   "w": "Grundtvig's Church"
+  },
+  {
+   "id": "louisebro",
+   "n": "Dronning Louises Bro",
+   "a": "Dronning Louises Bro",
+   "lat": 55.6867114,
+   "lng": 12.5638952,
+   "pid": "ChIJ_T-t3wZTUkYRzhiWcrxnJeg",
+   "t": "sight",
+   "d": "Nørrebro",
+   "p": 2,
+   "s": "a",
+   "h": "всегда",
+   "x": "Мост через Озёра, закатная точка. Вход в Nørrebro.",
+   "w": "Dronning Louises Bro"
+  },
+  {
+   "id": "christiania",
+   "n": "Freetown Christiania",
+   "a": "Prinsessegade, Christianshavn",
+   "lat": 55.6734,
+   "lng": 12.5964,
+   "pid": "ChIJpz3tBzlTUkYRuSiVCeI9GK4",
+   "t": "area",
+   "d": "Christiania",
+   "p": 2,
+   "s": "a",
+   "h": "всегда · фото на Pusher Street нельзя",
+   "x": "Самоуправляемый «вольный город» с 1971 года: самодельные дома, граффити, мастерские, тропинки вдоль вала и озера Stadsgraven. Главный вход с Prinsessegade. Центр вокруг Pusher Street лучше пройти быстро и без камеры, а тихая часть у воды (Dyssen) — самое красивое. На карте район обведён пунктиром.",
+   "w": "Freetown Christiania",
+   "poly": [
+    [
+     55.67279,
+     12.60731
+    ],
+    [
+     55.67202,
+     12.6054
+    ],
+    [
+     55.67173,
+     12.60464
+    ],
+    [
+     55.67139,
+     12.60451
+    ],
+    [
+     55.67116,
+     12.60406
+    ],
+    [
+     55.67121,
+     12.60344
+    ],
+    [
+     55.67159,
+     12.60294
+    ],
+    [
+     55.67161,
+     12.6024
+    ],
+    [
+     55.67132,
+     12.60108
+    ],
+    [
+     55.67089,
+     12.60025
+    ],
+    [
+     55.67091,
+     12.5996
+    ],
+    [
+     55.67145,
+     12.59886
+    ],
+    [
+     55.6725,
+     12.59809
+    ],
+    [
+     55.67443,
+     12.59784
+    ],
+    [
+     55.67466,
+     12.59893
+    ],
+    [
+     55.67484,
+     12.60105
+    ],
+    [
+     55.6744,
+     12.60237
+    ],
+    [
+     55.67437,
+     12.60326
+    ],
+    [
+     55.67465,
+     12.60446
+    ],
+    [
+     55.67687,
+     12.60782
+    ],
+    [
+     55.67884,
+     12.60934
+    ],
+    [
+     55.67964,
+     12.60967
+    ],
+    [
+     55.68151,
+     12.61021
+    ],
+    [
+     55.68222,
+     12.61014
+    ],
+    [
+     55.68221,
+     12.61134
+    ],
+    [
+     55.68357,
+     12.61283
+    ],
+    [
+     55.6831,
+     12.61428
+    ],
+    [
+     55.68239,
+     12.61391
+    ],
+    [
+     55.68126,
+     12.61401
+    ],
+    [
+     55.68052,
+     12.6138
+    ],
+    [
+     55.67991,
+     12.61454
+    ],
+    [
+     55.67925,
+     12.61366
+    ],
+    [
+     55.67808,
+     12.61297
+    ],
+    [
+     55.67708,
+     12.61289
+    ],
+    [
+     55.6766,
+     12.61294
+    ],
+    [
+     55.67555,
+     12.61112
+    ],
+    [
+     55.67458,
+     12.60992
+    ],
+    [
+     55.67406,
+     12.60996
+    ],
+    [
+     55.67379,
+     12.60934
+    ],
+    [
+     55.67294,
+     12.60759
+    ]
+   ]
+  },
+  {
+   "id": "christianshavn",
+   "n": "Christianshavns Kanal",
+   "a": "Christianshavn",
+   "lat": 55.6739118,
+   "lng": 12.5932433,
+   "pid": "ChIJbQ3kqj5TUkYR6dmsbKvI6_g",
+   "t": "area",
+   "d": "Christianshavn",
+   "p": 1,
+   "s": "a",
+   "h": "всегда",
+   "x": "Каналы, лодки, старые склады. Одна из главных пеших зон.",
+   "w": "Christianshavn"
+  },
+  {
+   "id": "jaegersborg",
+   "n": "Jægersborggade",
+   "a": "Jægersborggade",
+   "lat": 55.6923309,
+   "lng": 12.5444796,
+   "pid": "ChIJBW9hhq1TUkYRs5dR9HX0c1U",
+   "t": "area",
+   "d": "Nørrebro",
+   "p": 1,
+   "s": "a",
+   "h": "улица",
+   "x": "Главная улица Nørrebro (Meyers, Calma). По свежим отзывам, часть в стройке.",
+   "w": "Jægersborggade"
+  },
+  {
+   "id": "kodbyen",
+   "n": "Kødbyen (Meatpacking)",
+   "a": "Kødbyen, Vesterbro",
+   "lat": 55.6684381,
+   "lng": 12.5593575,
+   "pid": "ChIJIdTdlXNTUkYRF4WbA6GBHl8",
+   "t": "area",
+   "d": "Vesterbro",
+   "p": 3,
+   "s": "f",
+   "h": "район",
+   "x": "Кофе в Prolog, промышленная атмосфера. Лучше как приложение к другому дню.",
+   "w": "Kødbyen"
+  },
+  {
+   "id": "nordhavn",
+   "n": "Nordhavn",
+   "a": "Nordhavnen",
+   "lat": 55.7125788,
+   "lng": 12.5927039,
+   "pid": "ChIJ8VQiCOxSUkYRAMwg1HO8ojU",
+   "t": "area",
+   "d": "Nordhavn",
+   "p": 1,
+   "s": "m",
+   "h": "район",
+   "x": "Ссылка друга: «Красивый район с новостройками и уличными саунами». Гипотеза подтвердилась: это Nordhavnen.",
+   "w": "Nordhavn"
+  },
+  {
+   "id": "konditaget",
+   "n": "Konditaget Lüders",
+   "a": "Helsinkigade 30",
+   "lat": 55.7077026,
+   "lng": 12.5977802,
+   "pid": "ChIJ7e8HJ-pSUkYRpXrEh0FrjXA",
+   "t": "area",
+   "d": "Nordhavn",
+   "p": 2,
+   "s": "a",
+   "h": "7–22",
+   "x": "Площадка на крыше паркинга с видом на гавань, бесплатно. Есть лифт."
+  },
+  {
+   "id": "saunanor",
+   "bk": {
+    "k": "t",
+    "l": "Записаться на сеанс",
+    "u": "https://www.saunanor.dk/en/booking/"
+   },
+   "n": "SaunaNor (Sandkaj)",
+   "a": "Göteborg Plads, Nordhavn",
+   "lat": 55.7066634,
+   "lng": 12.5971007,
+   "pid": "ChIJRSn5pWtTUkYRpZUBEhlCUOo",
+   "t": "sauna",
+   "d": "Nordhavn",
+   "p": 1,
+   "s": "a",
+   "h": "сеансы по брони · 220 DKK · 75 мин",
+   "x": "Сауна-гус с мастером, 3 круга по 12 мин, между ними окунание в гавань. Членство не нужно. Раздевалок нет.",
+   "b": 1
+  },
+  {
+   "id": "saunahouse",
+   "bk": {
+    "k": "t",
+    "l": "Записаться на гус",
+    "u": "https://saunahouse.dk/en/pages/saunagus"
+   },
+   "n": "Sauna House Nordhavn",
+   "a": "Dunkerquegade 31",
+   "lat": 55.7095101,
+   "lng": 12.5964408,
+   "pid": "ChIJgUEQTIpTUkYRqA67hWfK-gg",
+   "t": "sauna",
+   "d": "Nordhavn",
+   "p": 2,
+   "s": "a",
+   "h": "7–22 · гус для гостей 240 DKK · 18+",
+   "x": "3 сауны, зона холодной воды, дневной пропуск. Комфортнее и «спа-шнее», чем SaunaNor.",
+   "b": 1
+  },
+  {
+   "id": "hotncold",
+   "bk": {
+    "k": "t",
+    "l": "Записаться на гус",
+    "u": "https://hotncoldnordhavn.dk/en/"
+   },
+   "n": "HOT N' COLD Nordhavn",
+   "a": "Sundkrogskaj 19",
+   "lat": 55.7125397,
+   "lng": 12.5906217,
+   "pid": "ChIJydUICABTUkYR818p68LNiUs",
+   "t": "sauna",
+   "d": "Nordhavn",
+   "p": 3,
+   "s": "a",
+   "h": "6:30–21:30",
+   "x": "Свой пирс для окунания. Гусы в пт–сб раскупают быстро.",
+   "b": 1
+  },
+  {
+   "id": "copenhot",
+   "bk": {
+    "k": "t",
+    "l": "Забронировать купель",
+    "u": "https://copenhot.com/en/booking"
+   },
+   "n": "CopenHot",
+   "a": "Refshalevej 195",
+   "lat": 55.6907941,
+   "lng": 12.6236846,
+   "pid": "ChIJTzwCPiNTUkYRfyuSSB5RcWw",
+   "t": "sauna",
+   "d": "Refshaleøen",
+   "p": 1,
+   "s": "a",
+   "h": "по брони · частная купель на 1,5 ч",
+   "x": "Самый романтичный вариант: своя купель на дровах на двоих плюс сауна и холодные купели. Можно принести своё вино. Цена за купель, а не за человека.",
+   "b": 1
+  },
+  {
+   "id": "strandbad",
+   "n": "Strandbad Nordhavn (Sandkaj)",
+   "a": "Sandkaj 27",
+   "lat": 55.7064795,
+   "lng": 12.5973554,
+   "pid": "ChIJX4RKmcpTUkYRvzujYEmXzgw",
+   "t": "sauna",
+   "d": "Nordhavn",
+   "p": 3,
+   "s": "a",
+   "h": "бесплатно",
+   "x": "Городская купальня в гавани. Можно окунуться без сауны."
+  },
+  {
+   "id": "badehuset",
+   "n": "Badehuset",
+   "a": "Holmen / Christianshavn",
+   "lat": 55.6737255,
+   "lng": 12.602128,
+   "pid": "ChIJV5f_qDBTUkYRyMfAurGOcPQ",
+   "t": "sauna",
+   "d": "Christianshavn",
+   "p": 4,
+   "s": "a",
+   "h": "вт–вс 12–21 · 50 DKK наличными",
+   "x": "Без изысков, общая нагота, холодной купели нет. Для пары не лучший выбор."
+  },
+  {
+   "id": "cisternerne",
+   "bk": {
+    "k": "k",
+    "l": "Купить билет",
+    "u": "https://shop.frederiksbergmuseerne.dk/billetter/cisternerne/"
+   },
+   "n": "Cisternerne",
+   "a": "Roskildevej 25A, Søndermarken",
+   "lat": 55.6695374,
+   "lng": 12.5242031,
+   "pid": "ChIJfyjMH5dTUkYRb6MBP3wrqC0",
+   "t": "gallery",
+   "d": "Frederiksberg",
+   "p": 2,
+   "s": "e",
+   "h": "пт–вс 11–18 · 110 DKK",
+   "ev": "Marina Abramović: Seven Deaths до 30.11. Семь фильмов с Уиллемом Дефо на арии Марии Каллас в подземных цистернах",
+   "x": "Подземное водохранилище XIX века под парком: темно, холодно, эхо, куртки выдают на входе. Около часа. Популярно в TikTok. Самое атмосферное арт-место города в эти даты."
+  },
+  {
+   "id": "smk",
+   "bk": {
+    "k": "k",
+    "l": "Билет Parkmuseerne",
+    "u": "https://www.parkmuseerne.dk/en/kob-billet/"
+   },
+   "n": "SMK (Национальная галерея)",
+   "a": "Sølvgade 48–50",
+   "lat": 55.6888127,
+   "lng": 12.5783303,
+   "pid": "ChIJQfd58hxTUkYR_mgIYo8ErNA",
+   "t": "park",
+   "d": "Indre By",
+   "p": 2,
+   "s": "e",
+   "h": "вт–вс 10–18",
+   "ev": "Couples Therapy: четыре датских арт-дуэта о совместной работе · коллекции: Золотой век, Matisse / Picasso / Modigliani · Вход по общему билету Parkmuseerne: 345 DKK на 6 музеев (SMK, Hirschsprung, Davids Samling, Rosenborg, Arbejdermuseet, Музей естественной истории) + Palmehuset, каждый по разу, год с первого визита",
+   "x": "Около 1 км от отеля. Датская и французская живопись понятна без длинных текстов. В вс в 13:15 бесплатный 15-минутный тур."
+  },
+  {
+   "id": "hirschsprung",
+   "bk": {
+    "k": "k",
+    "l": "Билет Parkmuseerne",
+    "u": "https://www.parkmuseerne.dk/en/kob-billet/"
+   },
+   "n": "Den Hirschsprungske Samling",
+   "a": "Stockholmsgade 20",
+   "lat": 55.689993,
+   "lng": 12.5773931,
+   "pid": "ChIJh3wvJx1TUkYRsBM5GKdGnxs",
+   "t": "park",
+   "d": "Østerbro",
+   "p": 2,
+   "s": "e",
+   "h": "вт–вс 10–17 · 110 DKK",
+   "ev": "The Funen Painters. Art above all! (с 18.09) · The Modern Breakthrough: Hammershøi, Krøyer · Вход по общему билету Parkmuseerne: 345 DKK на 6 музеев (SMK, Hirschsprung, Davids Samling, Rosenborg, Arbejdermuseet, Музей естественной истории) + Palmehuset, каждый по разу, год с первого визита",
+   "x": "Маленький музей в парке, около 800 м от отеля. Фигуративная датская живопись, как ты любишь. Хватит 45–60 минут."
+  },
+  {
+   "id": "davids",
+   "n": "Davids Samling",
+   "a": "Kronprinsessegade 30",
+   "lat": 55.6842651,
+   "lng": 12.5823421,
+   "pid": "ChIJPRprexlTUkYRAa6-YXcs7r8",
+   "t": "park",
+   "d": "Indre By",
+   "p": 3,
+   "s": "a",
+   "h": "вт–вс 10–17 · бесплатно",
+   "x": "Исламское искусство и европейские интерьеры XVIII века в особняке. Вход бесплатный, стоит на пути у Kongens Have.",
+   "ev": "Вход по общему билету Parkmuseerne: 345 DKK на 6 музеев (SMK, Hirschsprung, Davids Samling, Rosenborg, Arbejdermuseet, Музей естественной истории) + Palmehuset, каждый по разу, год с первого визита",
+   "bk": {
+    "k": "k",
+    "l": "Билет Parkmuseerne",
+    "u": "https://www.parkmuseerne.dk/en/kob-billet/"
+   }
+  },
+  {
+   "id": "thorvaldsen",
+   "n": "Thorvaldsens Museum",
+   "a": "Bertel Thorvaldsens Plads 2",
+   "lat": 55.6765485,
+   "lng": 12.5782685,
+   "pid": "ChIJF2rIsxZTUkYRwtHCYRGSY5c",
+   "t": "museum",
+   "d": "Indre By",
+   "p": 3,
+   "s": "a",
+   "h": "вт–вс 10–17",
+   "x": "Неоклассическая скульптура в залах с яркими стенами и мозаичными полами. Сам интерьер впечатляет. Хватит 40 минут."
+  },
+  {
+   "id": "charlottenborg",
+   "bk": {
+    "k": "k",
+    "l": "Страница вернисажа",
+    "u": "https://kunsthalcharlottenborg.dk/da/events/saesonaabning-efteraar-2026/"
+   },
+   "n": "Kunsthal Charlottenborg",
+   "a": "Nyhavn 2",
+   "lat": 55.6798893,
+   "lng": 12.5882624,
+   "pid": "ChIJR5619xdTUkYRioG0c49cxvg",
+   "t": "gallery",
+   "d": "Indre By",
+   "p": 2,
+   "s": "e",
+   "h": "пт 25.09 17–22 вернисаж · сб–вс 11–17",
+   "ev": "Открытие сезона в пт 25.09, 17–22, вход свободный. Живая музыка CEVIL, диджеи. Новые выставки: Jochen Lempert (ч/б фото природы), Amalie Smith, Som Supaparinya",
+   "x": "Прямо у Nyhavn. Лёгкий вариант пятничного вечера: вернисаж, потом ужин рядом."
+  },
+  {
+   "id": "nikolaj",
+   "n": "Nikolaj Kunsthal",
+   "a": "Nikolaj Plads 10",
+   "lat": 55.678644,
+   "lng": 12.5815874,
+   "pid": "ChIJZ7XgGRdTUkYRmi-Kary7yRs",
+   "t": "gallery",
+   "d": "Indre By",
+   "p": 3,
+   "s": "e",
+   "h": "пт 11–18 · сб–вс 11–17",
+   "ev": "Maria Wæhrens: The Answer · Christian Skjødt Hasselstrøm: Meridians (до 10.01)",
+   "x": "Современное искусство в бывшей церкви с кафе. Интереснее само здание, чем выставка."
+  },
+  {
+   "id": "glstrand",
+   "n": "Kunstforeningen GL STRAND",
+   "a": "Gammel Strand 48",
+   "lat": 55.6776525,
+   "lng": 12.5776141,
+   "pid": "ChIJ469BMRFTUkYRie5E-AV_6ls",
+   "t": "gallery",
+   "d": "Indre By",
+   "p": 3,
+   "s": "e",
+   "h": "вт–вс 10–17",
+   "ev": "Olivia Holm-Møller · Still Joy (обе с 18.09)",
+   "x": "Маленькая галерея на канале. Рядом Agnete og Havmanden."
+  },
+  {
+   "id": "denfrie",
+   "n": "Den Frie",
+   "a": "Oslo Plads 1",
+   "lat": 55.691558,
+   "lng": 12.5874314,
+   "pid": "ChIJSR613uFSUkYRhGzFceYEkGg",
+   "t": "gallery",
+   "d": "Østerbro",
+   "p": 3,
+   "s": "e",
+   "h": "пт 12–18 · сб–вс 10–18",
+   "ev": "Senga Nengudi: Sand and Water (до 27.09) · Nervetråde (до 1.11)",
+   "x": "Деревянный павильон 1898 года прямо у отеля. Отзывы на выставки смешанные, зато в подвале уютное кафе."
+  },
+  {
+   "id": "dac",
+   "bk": {
+    "k": "k",
+    "l": "Билеты",
+    "u": "https://dac.dk/en/plan-your-visit"
+   },
+   "n": "Danish Architecture Center (BLOX)",
+   "a": "Bryghuspladsen 10",
+   "lat": 55.6722883,
+   "lng": 12.5789266,
+   "pid": "ChIJhaniNzxTUkYRb49PigcFdtM",
+   "t": "museum",
+   "d": "Indre By",
+   "p": 2,
+   "s": "t",
+   "h": "пт 10–21 · сб–вс 10–18",
+   "x": "Датская архитектура и дизайн. Вниз можно съехать по 4-этажной горке, её постоянно снимают в TikTok. Кафе на крыше с видом на гавань. Хороший вариант на дождь, закрывается в пт в 21."
+  },
+  {
+   "id": "arhoj",
+   "n": "Studio Arhoj",
+   "a": "Nørregade 7",
+   "lat": 55.6790025,
+   "lng": 12.5718797,
+   "pid": "ChIJHz5oeq9TUkYR2nrIKPL2Z8Q",
+   "t": "niche",
+   "d": "Indre By",
+   "p": 2,
+   "s": "t",
+   "h": "ежедн. 10–18",
+   "x": "Аналоговая фотобудка 60-х, вирусная в TikTok: полоска фото на двоих как сувенир. Здесь же керамика и стекло ручной работы и видно мастерскую. Маленькие вещи влезут в рюкзак."
+  },
+  {
+   "id": "agnete",
+   "n": "Agnete og Havmanden",
+   "a": "Højbro, у Ved Stranden",
+   "lat": 55.6776393,
+   "lng": 12.5802315,
+   "pid": "ChIJIfG_3BZTUkYR1Z6uESwPxf8",
+   "t": "niche",
+   "d": "Indre By",
+   "p": 3,
+   "s": "t",
+   "h": "всегда",
+   "x": "Бронзовые водяной и дети на дне канала. Видно в солнечный день около полудня, вечером их подсвечивают. Минутная остановка."
+  },
+  {
+   "id": "oldlib",
+   "bk": {
+    "k": "k",
+    "l": "Вход и туры",
+    "u": "https://www.kb.dk/en/visit-us/university-library-fiolstraede"
+   },
+   "n": "Старая университетская библиотека",
+   "a": "Fiolstræde 1",
+   "lat": 55.6801391,
+   "lng": 12.5732044,
+   "pid": "ChIJf-n_x4dTUkYRiG6Y0TQQaVM",
+   "t": "niche",
+   "d": "Indre By",
+   "p": 2,
+   "s": "t",
+   "h": "пт–сб 10–17 · вс закрыто · небольшая плата",
+   "x": "Деревянные галереи и книги, которые можно брать в руки. Вирусное место из TikTok. В некоторые дни в 14:00 бывает тур на английском."
+  },
+  {
+   "id": "filmtaget",
+   "n": "Filmtaget",
+   "a": "Gothersgade 55",
+   "lat": 55.6831397,
+   "lng": 12.5786109,
+   "pid": "ChIJUdZ0Ig1TUkYRGaNpKOU743Y",
+   "t": "niche",
+   "d": "Indre By",
+   "p": 2,
+   "s": "t",
+   "h": "вт–вс 11–23 · кухня до 21",
+   "x": "Крыша Датского киноинститута: вход бесплатный, вид на центр, кафе, уличное кино. Хорошая точка на закат у Kongens Have, от отеля 1,2 км."
+  },
+  {
+   "id": "palmehus",
+   "n": "Palmehuset (Botanisk Have)",
+   "a": "Øster Farimagsgade 2B",
+   "lat": 55.6874806,
+   "lng": 12.5729882,
+   "pid": "ChIJTxdcXwNTUkYRB93TFYaUk6M",
+   "t": "park",
+   "d": "Indre By",
+   "p": 3,
+   "s": "t",
+   "h": "вт–вс 10–17",
+   "x": "Викторианская оранжерея с бабочками. Сам ботанический сад бесплатный. Хорошо в связке с SMK.",
+   "ev": "Вход по общему билету Parkmuseerne: 345 DKK на 6 музеев (SMK, Hirschsprung, Davids Samling, Rosenborg, Arbejdermuseet, Музей естественной истории) + Palmehuset, каждый по разу, год с первого визита",
+   "bk": {
+    "k": "k",
+    "l": "Билет Parkmuseerne",
+    "u": "https://www.parkmuseerne.dk/en/kob-billet/"
+   }
+  },
+  {
+   "id": "bibhave",
+   "n": "Bibliotekshaven",
+   "a": "Proviantpassagen 1",
+   "lat": 55.6746348,
+   "lng": 12.5812279,
+   "pid": "ChIJNz-k0hVTUkYRUqI-FugMXT0",
+   "t": "niche",
+   "d": "Indre By",
+   "p": 3,
+   "s": "a",
+   "h": "6–22",
+   "x": "Тихий сад за Christiansborg с прудом и статуей Кьеркегора. Мало туристов."
+  },
+  {
+   "id": "blackdiamond",
+   "n": "Королевская библиотека (Den Sorte Diamant)",
+   "a": "Søren Kierkegaards Plads 1",
+   "lat": 55.6733994,
+   "lng": 12.5826588,
+   "pid": "ChIJ36KzuxVTUkYRDDCgC3HCTGw",
+   "t": "niche",
+   "d": "Indre By",
+   "p": 3,
+   "s": "t",
+   "h": "пт 8–20 · сб 9–18 · вс 10–16",
+   "x": "Чёрный стеклянный корпус на воде, внутри старый читальный зал. Вход бесплатный."
+  },
+  {
+   "id": "copenhill",
+   "n": "CopenHill",
+   "a": "Vindmøllevej 6",
+   "lat": 55.6846011,
+   "lng": 12.6200294,
+   "pid": "ChIJQ1wUoCtTUkYRivQIXIVAfcg",
+   "t": "niche",
+   "d": "Amager",
+   "p": 2,
+   "s": "t",
+   "h": "пт 11–19 · сб 10–19 · вс 10–17",
+   "x": "Мусоросжигательный завод от BIG с лыжным склоном на крыше. На крышу можно бесплатно подняться пешком по тропе или на лифте. Виден из купели CopenHot, связка на субботу."
+  },
+  {
+   "id": "magstraede",
+   "n": "Magstræde",
+   "a": "Magstræde",
+   "lat": 55.6763631,
+   "lng": 12.5754264,
+   "pid": "ChIJdYMIZxFTUkYRv7ZczPQEPa4",
+   "t": "niche",
+   "d": "Indre By",
+   "p": 3,
+   "s": "t",
+   "h": "улица",
+   "x": "Одна из старейших улиц: брусчатка, цветные дома. По пути к Thorvaldsens."
+  },
+  {
+   "id": "centralcafe",
+   "n": "Central Hotel & Café",
+   "a": "Tullinsgade 1",
+   "lat": 55.673969,
+   "lng": 12.5515334,
+   "pid": "ChIJsYbyoApTUkYRAsIN4fh3Y14",
+   "t": "cafe",
+   "d": "Vesterbro",
+   "p": 3,
+   "s": "t",
+   "h": "пт 8–17 · сб–вс 9–16",
+   "x": "Самый маленький отель в мире (один номер) с крошечным кафе внизу. Хорошо в связке с Hart и Cisternerne."
+  },
+  {
+   "id": "hotel",
+   "n": "Hotel Østerport",
+   "a": "Oslo Plads 5",
+   "lat": 55.6917778,
+   "lng": 12.5869475,
+   "pid": "ChIJjdtQ4OFSUkYRRaKg0Tc4MYo",
+   "t": "hotel",
+   "d": "Østerbro",
+   "p": 1,
+   "s": "a",
+   "h": "заселение ~15:00",
+   "x": "Напротив станции Østerport: оттуда прямой поезд из аэропорта (~20 мин) и в Humlebæk к Louisiana (~35 мин), рядом метро M3. Отель стоит у путей: при заселении попроси тихую сторону.",
+   "base": true
+  },
+  {
+   "id": "jjost",
+   "n": "Joe & The Juice (Østerport)",
+   "a": "Østerport Station",
+   "lat": 55.6926269,
+   "lng": 12.587443,
+   "pid": "ChIJpfHJQaJTUkYRVEkQvva8pyY",
+   "t": "transport",
+   "d": "Østerbro",
+   "p": 2,
+   "s": "a",
+   "h": "пт 6:30–20 · сб–вс 8–20",
+   "x": "На станции у отеля: завтрак, потом сразу оставить рюкзаки."
+  },
+  {
+   "id": "jjair",
+   "n": "Joe & The Juice (аэропорт T3)",
+   "a": "Terminal 3, Baggage Claim, Kastrup",
+   "lat": 55.6285238,
+   "lng": 12.6473956,
+   "pid": "ChIJ9Tfkp3SrU0YRnb2tPeRo5Xs",
+   "t": "transport",
+   "d": "Kastrup",
+   "p": 3,
+   "s": "a",
+   "h": "7–22",
+   "x": "В зоне выдачи багажа. Если завтракать сразу по прилёте.",
+   "far": true
+  },
+  {
+   "id": "jjcph",
+   "n": "Joe & The Juice (Центральный вокзал)",
+   "a": "Københavns Hovedbanegård",
+   "lat": 55.6729267,
+   "lng": 12.5658202,
+   "pid": "ChIJgy4aag1TUkYRPUvifsgBbJ8",
+   "t": "transport",
+   "d": "Indre By",
+   "p": 3,
+   "s": "a",
+   "h": "5–22",
+   "x": "Работает с 5 утра. Удобно, если отель в центре."
+  }
+ ],
+ "presets": [
+  {
+   "n": "Пт утро · петля по центру → отель к 15:00",
+   "ids": [
+    "hotel",
+    "kastellet",
+    "amalienborg",
+    "frederiks",
+    "nyhavn",
+    "am",
+    "kings",
+    "hotel"
+   ],
+   "m": "walking"
+  },
+  {
+   "n": "Пт вечер A · Louisiana на закате (поезд с Østerport)",
+   "ids": [
+    "hotel",
+    "louisiana",
+    "hotel"
+   ],
+   "m": "transit"
+  },
+  {
+   "n": "Пт вечер B · вернисаж Charlottenborg (free, 17–22)",
+   "ids": [
+    "hotel",
+    "charlottenborg",
+    "nyhavn",
+    "hotel"
+   ],
+   "m": "walking"
+  },
+  {
+   "n": "Сб · Christianshavn → Christiania → Refshaleøen",
+   "ids": [
+    "christianshavn",
+    "saviour",
+    "christiania",
+    "lille",
+    "cc",
+    "copenhill"
+   ],
+   "m": "walking"
+  },
+  {
+   "n": "Вс · Juno → Nordhavn → Nørrebro → Grundtvig",
+   "ids": [
+    "hotel",
+    "juno",
+    "konditaget",
+    "louisebro",
+    "assistens",
+    "jaegersborg",
+    "superkilen",
+    "grundtvig"
+   ],
+   "m": "walking"
+  },
+  {
+   "n": "Parkmuseerne · один билет, всё у отеля",
+   "ids": [
+    "hotel",
+    "hirschsprung",
+    "smk",
+    "palmehus",
+    "rosenborg",
+    "kings",
+    "davids"
+   ],
+   "m": "walking"
+  },
+  {
+   "n": "Нишевый центр (TikTok) · библиотека, фотобудка, крыша",
+   "ids": [
+    "hotel",
+    "oldlib",
+    "arhoj",
+    "magstraede",
+    "agnete",
+    "glstrand",
+    "filmtaget",
+    "hotel"
+   ],
+   "m": "walking"
+  },
+  {
+   "n": "Дождь · Glyptotek (Degas) + DAC + Thorvaldsen",
+   "ids": [
+    "glypto",
+    "dac",
+    "bibhave",
+    "thorvaldsen",
+    "agnete"
+   ],
+   "m": "walking"
+  },
+  {
+   "n": "Frederiksberg · Hart → Cisternerne (Abramović)",
+   "ids": [
+    "hart",
+    "centralcafe",
+    "cisternerne"
+   ],
+   "m": "walking"
+  }
+ ]
+}
