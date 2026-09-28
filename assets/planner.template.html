@@ -785,6 +785,7 @@ details.facts ul{margin:8px 0 0;padding-left:18px;display:grid;gap:5px;font-size
 select{border:1px solid var(--line);border-radius:8px;padding:6px 8px;background:var(--bg)}
 .num-ic{background:var(--accent);color:#fff;border-radius:50%;font:600 12px/22px var(--mono);text-align:center;width:22px;height:22px;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)}
 .leaflet-container{font:inherit}
+.leaflet-tile-pane.dark{filter:invert(1) hue-rotate(180deg) brightness(.82) contrast(.9) saturate(.55)}
 .sortable-ghost{opacity:.4}
 @media (max-width:980px){
   html,body{overflow:hidden;overscroll-behavior:none}
@@ -958,7 +959,8 @@ let route=store.get("route",[]).filter(x=>typeof x!=="string"||byId[x]).slice(0,
 const map=L.map("map",{zoomControl:true,attributionControl:true});
 const dark=matchMedia("(prefers-color-scheme: dark)");
 let tiles=null;
-function setTiles(){if(META.tiles===false)return;if(tiles)map.removeLayer(tiles);tiles=L.tileLayer(`https://{s}.basemaps.cartocdn.com/${dark.matches?"dark_all":"light_all"}/{z}/{x}/{y}{r}.png`,{subdomains:"abcd",maxZoom:19,attribution:'&copy; OpenStreetMap &copy; CARTO · фото: Wikimedia Commons'}).addTo(map)}
+// Raster tiles: OSM standard by default (no API key). Dark theme = CSS filter on the tile pane. Override with meta.tileUrl / meta.tileAttribution.
+function setTiles(){if(META.tiles===false)return;if(tiles)map.removeLayer(tiles);tiles=L.tileLayer(META.tileUrl||"https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:META.tileAttribution||'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · фото: Wikimedia Commons'}).addTo(map);map.getPane("tilePane").classList.toggle("dark",dark.matches&&!META.tileUrl)}
 map.createPane("base");map.getPane("base").style.zIndex=150;
 const baseR=L.canvas({pane:"base",padding:.5});let baseLayer=null;
 function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()}

@@ -42,7 +42,7 @@ Layout of `data.json`: see [`references/data-schema.md`](references/data-schema.
 
 ## How the page works
 
-Leaflet 1.9 (CARTO tiles, optional embedded OSM basemap), SortableJS for drag-and-drop, qrcodejs for the QR
+Leaflet 1.9 (OpenStreetMap tiles, optional embedded vector basemap), SortableJS for drag-and-drop, qrcodejs for the QR
 button — all from cdnjs. Photos come live from Wikipedia (`w` = article title) and Wikimedia Commons
 (geosearch around the point). Route, filters and clustering are kept in `localStorage`. No build step in the
 browser, no tracking, no backend.

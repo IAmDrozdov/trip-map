@@ -19,7 +19,8 @@ Top level: `meta`, `types`, `priorities`, `sources`, `places`, `presets`, option
 | `factsTitle` | string | no | Heading of the collapsible facts block (`"Проверено 24.09 — что изменилось"`). |
 | `facts` | string[] | no | Bullet points; `<b>` allowed. Closures, last days of exhibitions, tickets, transport from the base. |
 | `weather` | object[] | no | `{d: "Пт 25", t: "13–16°", r: "10% 🌧"}` per day, shown as tiles under the facts. |
-| `tiles` | bool | no | `false` disables the CARTO raster tiles (use with an embedded `basemap`). |
+| `tiles` | bool | no | `false` disables raster tiles (use with an embedded `basemap`). |
+| `tileUrl`, `tileAttribution` | string | no | Tile template + attribution HTML. Default: OpenStreetMap standard tiles (`https://tile.openstreetmap.org/{z}/{x}/{y}.png`, no API key; dark theme via a CSS filter). CARTO/Stadia/MapTiler need keys on hosted domains. |
 | `photos` | bool | no | `false` disables Wikipedia/Wikimedia photo lookups in cards. |
 
 ## types
