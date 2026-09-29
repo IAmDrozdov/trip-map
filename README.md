@@ -42,6 +42,23 @@ python3 scripts/build.py data.json --basemap basemap.json -o out.html
 node scripts/check.mjs out.html                               # Playwright smoke test + screenshots
 ```
 
+### Fully offline page
+
+One HTML file with zero network requests: libraries, fonts, a vector map of the city (zoomable, light/dark) and up to 3
+photos per place are embedded.
+
+```bash
+brew install pmtiles                                         # once
+python3 scripts/fetch_offline_map.py data.json -o city.pmtiles
+uv run --with pillow python scripts/build.py data.json --offline --map city.pmtiles -o trip.html
+node scripts/check.mjs trip.html --offline                   # blocks all network and verifies map, photos, dark mode
+```
+
+The map covers the padded bounding box of the places (`--pad-km`, default 1.5) and a box around each `far` place, up to
+zoom 15, and stays sharp when zoomed further. Expect 15-30 MB. Photos are picked at build time: `img` URLs from `data.json`, then
+the Wikipedia page image, the Wikidata image and Commons category of `w`, then filtered Commons photos near the point.
+Downloads are cached in `.cache/`. Google Maps, Telegram and booking buttons remain links and need internet.
+
 Layout of `data.json`: see [`references/data-schema.md`](references/data-schema.md).
 
 ## How the page works

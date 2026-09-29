@@ -22,6 +22,9 @@ Top level: `meta`, `types`, `priorities`, `sources`, `places`, `presets`, option
 | `tiles` | bool | no | `false` disables raster tiles (use with an embedded `basemap`). |
 | `tileUrl`, `tileAttribution` | string | no | Tile template + attribution HTML. Default: OpenStreetMap standard tiles (`https://tile.openstreetmap.org/{z}/{x}/{y}.png`, no API key; dark theme via a CSS filter). CARTO/Stadia/MapTiler need keys on hosted domains. |
 | `photos` | bool | no | `false` disables Wikipedia/Wikimedia photo lookups in cards. |
+| `mapLang` | string | no | Language of map labels in the offline vector map (`en`, `de`, `ru`...). Default `en`. |
+| `glyphRanges` | string[] | no | Extra glyph ranges for the offline map labels, e.g. `["1280-1535"]`. Default covers Latin, Cyrillic and punctuation. |
+| `offline` | bool | no | Set by `build.py --offline`; never write it by hand. |
 
 ## types
 
@@ -70,6 +73,7 @@ Priority 1 gets the biggest marker and a ★ in lists. Sources are free-form key
 | `ev` | string | no | What is on there during the trip: exhibition + end date, a vernissage, a combined ticket. Shown as «Сейчас идёт». |
 | `bk` | object | no | Booking: `{"k": "t", "l": "Забронировать стол", "u": "https://…"}`. `k`: `"t"` = table/slot/session (📅), `"k"` = tickets (🎟). `u` = the venue's own page. |
 | `b` | bool | no | Booking needed but no link known → shows a «бронь» chip and counts as «Нужна бронь» in clustering. |
+| `img` | string[] | no | Direct image URLs to embed as card photos in `--offline` builds; they come before Wikipedia and Commons photos. Use it for bakeries, cafes and other places without a Wikipedia article. |
 | `w` | string | no | English Wikipedia article title for the card photo (`"Church of Our Saviour, Copenhagen"`). |
 | `pr` | int | no | Per-place photo search radius (overrides the type's). |
 | `base` | bool | no | The hotel / starting point: always visible, biggest marker. Exactly one is recommended. |

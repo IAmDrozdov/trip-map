@@ -15,6 +15,9 @@ trip-map/
 ├── assets/planner.template.html   # the page (Leaflet, Sortable, qrcode from cdnjs; Leaflet CSS inlined)
 ├── scripts/build.py               # data.json (+ basemap) -> html; validates the schema
 ├── scripts/fetch_basemap.py       # optional offline land/water/roads layer from OSM (Overpass + shapely)
+├── scripts/fetch_offline_map.py   # optional PMTiles vector map extract for --offline builds
+├── scripts/offline_assets.py      # vendor libs, fonts and map glyphs inlined by --offline
+├── scripts/offline_photos.py      # build-time photo picking and WebP embedding
 ├── scripts/check.mjs              # optional Playwright smoke test (desktop + iPhone screenshots)
 ├── references/data-schema.md      # every field of data.json, with examples
 ├── references/research.md         # how to gather places: coords, place_id, hours, photos, what's on, bookings
@@ -45,6 +48,11 @@ trip-map/
    - Publishing as a Claude artifact? Add `--artifact` (body-only page) and embed a basemap
      (`scripts/fetch_basemap.py` → `--basemap basemap.json`), because the artifact sandbox blocks map tiles
      and photos; in a normal browser tiles and Wikimedia photos load and the basemap is unnecessary.
+   - Need one file that works with no internet (train, roaming, airplane mode)? Run
+     `scripts/fetch_offline_map.py data.json -o city.pmtiles` (needs the `pmtiles` CLI), then
+     `uv run --with pillow python scripts/build.py data.json --offline --map city.pmtiles -o <city>.html`.
+     It embeds libraries, fonts, a zoomable vector map and up to 3 photos per place. Add `img` URLs to places
+     without a Wikipedia article so they get real photos. Verify with `node scripts/check.mjs <city>.html --offline`.
 7. **Check** before delivering: open the file (or `node scripts/check.mjs <city>.html`) — no JS errors,
    markers present, a card opens, the type filter and the route link work. Fix data, rebuild.
 8. **Deliver** the HTML file (and/or the artifact) and summarise in a few lines: what was verified, what

@@ -6,11 +6,14 @@ Usage:
   python3 scripts/build.py data.json -o out.html
   python3 scripts/build.py data.json --basemap basemap.json # embed an offline land/water/roads layer
   python3 scripts/build.py data.json --artifact -o page.html # body-only page for publishing as a Claude artifact
+  python3 scripts/build.py data.json --offline --map city.pmtiles -o out.html  # zero network requests (needs pillow)
   python3 scripts/build.py data.json --check               # validate only, write nothing
 
 Exit code 1 on validation errors (they are printed with the offending place id / preset name).
 """
 import argparse, json, pathlib, re, sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 HERE = pathlib.Path(__file__).resolve().parent
 TEMPLATE = HERE.parent / "assets" / "planner.template.html"
@@ -122,6 +125,9 @@ def main():
     ap.add_argument("--artifact", action="store_true", help="emit a body-only page for publishing as a Claude artifact")
     ap.add_argument("--title", help="override the <title> (default: meta.title)")
     ap.add_argument("--check", action="store_true", help="validate only")
+    ap.add_argument("--offline", action="store_true", help="inline libraries, fonts and photos: the page makes no network requests")
+    ap.add_argument("--map", help="city.pmtiles from scripts/fetch_offline_map.py; embedded when --offline is set")
+    ap.add_argument("--no-photos", action="store_true", help="with --offline: do not embed photos")
     a = ap.parse_args()
 
     src = pathlib.Path(a.data)
@@ -139,15 +145,42 @@ def main():
         print(f"ok: {len(d['places'])} places, {len(d.get('presets') or [])} presets, {len(d['types'])} types, route limit {max_stops}")
         return
 
+    if a.artifact and a.offline:
+        sys.exit("--artifact and --offline cannot be combined")
+    if a.map and not a.offline:
+        sys.exit("--map needs --offline")
+    sizes = {}
+    if a.offline:
+        import offline_assets
+        d.setdefault("meta", {})["offline"] = True
+        if not a.map:
+            print("warn: --offline without --map: the page will have no street map (only the optional basemap layer)")
+        if not a.no_photos:
+            import offline_photos
+            n = offline_photos.embed_photos(d)
+            sizes["photos"] = sum(len(f["src"]) for p in d["places"] for f in p.get("ph", []))
+            print(f"embedded {n} photos")
+        head = offline_assets.vendor_head(True)
+        scripts = offline_assets.vendor_scripts(True)
+        assets = offline_assets.offline_assets_html(a.map, d["meta"].get("glyphRanges") or ())
+        sizes["js+fonts"] = len(head) + len(scripts)
+        sizes["map"] = len(assets)
+    else:
+        import offline_assets
+        head, scripts, assets = offline_assets.vendor_head(False), offline_assets.vendor_scripts(False), ""
+
     tpl = TEMPLATE.read_text(encoding="utf-8")
     payload = json.dumps(d, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    html = tpl.replace("<!--TRIP_DATA-->", payload).replace("{{TITLE}}", (a.title or d["meta"]["title"]).replace("<", "&lt;"))
+    html = tpl.replace("<!--VENDOR_HEAD-->", head).replace("<!--VENDOR_SCRIPTS-->", scripts).replace("<!--OFFLINE_ASSETS-->", assets)
+    html = html.replace("<!--TRIP_DATA-->", payload).replace("{{TITLE}}", (a.title or d["meta"]["title"]).replace("<", "&lt;"))
     if a.artifact:
         html = to_artifact(html)
     out = pathlib.Path(a.out) if a.out else src.with_suffix(".html")
     out.write_text(html, encoding="utf-8")
     print(f"wrote {out} ({out.stat().st_size // 1024} KB): {len(d['places'])} places, {len(d.get('presets') or [])} presets, "
-          f"{'with' if d.get('basemap') else 'no'} basemap, {'artifact' if a.artifact else 'standalone'} mode")
+          f"{'with' if d.get('basemap') else 'no'} basemap, {'artifact' if a.artifact else 'offline' if a.offline else 'standalone'} mode")
+    if sizes:
+        print("size breakdown: " + ", ".join(f"{k} {v / 1e6:.1f} MB" for k, v in sizes.items()))
 
 
 if __name__ == "__main__":

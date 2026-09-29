@@ -4,8 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{{TITLE}}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<!--VENDOR_HEAD-->
 <style>
 /* ---- Leaflet 1.9.4 (inlined so the page also works where external stylesheets are blocked) ---- */
 /* required styles */
@@ -916,9 +915,8 @@ select{border:1px solid var(--line);border-radius:8px;padding:6px 8px;background
 <script id="trip-data" type="application/json">
 <!--TRIP_DATA-->
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<!--OFFLINE_ASSETS-->
+<!--VENDOR_SCRIPTS-->
 <script>
 // ===================== trip-map runtime =====================
 // All trip-specific content lives in <script id="trip-data" type="application/json"> (see references/data-schema.md).
@@ -960,7 +958,36 @@ const map=L.map("map",{zoomControl:true,attributionControl:true});
 const dark=matchMedia("(prefers-color-scheme: dark)");
 let tiles=null;
 // Raster tiles: OSM standard by default (no API key). Dark theme = CSS filter on the tile pane. Override with meta.tileUrl / meta.tileAttribution.
-function setTiles(){if(META.tiles===false)return;if(tiles)map.removeLayer(tiles);tiles=L.tileLayer(META.tileUrl||"https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,crossOrigin:true,attribution:META.tileAttribution||'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · фото: Wikimedia Commons'}).addTo(map);map.getPane("tilePane").classList.toggle("dark",dark.matches&&!META.tileUrl)}
+function setTiles(){if(META.tiles===false)return;if(META.offline)return setOfflineTiles();if(tiles)map.removeLayer(tiles);tiles=L.tileLayer(META.tileUrl||"https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,crossOrigin:true,attribution:META.tileAttribution||'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · фото: Wikimedia Commons'}).addTo(map);map.getPane("tilePane").classList.toggle("dark",dark.matches&&!META.tileUrl)}
+function b64buf(s){const bin=atob(s),u=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);return u.buffer}
+const offlineEl=document.getElementById("offline-map"),glyphEl=document.getElementById("offline-glyphs");
+let offlineReady=false;
+function initOffline(){
+  if(offlineReady||!offlineEl||typeof maplibregl==="undefined")return offlineReady;
+  const buf=b64buf(offlineEl.textContent.trim());
+  const glyphs=glyphEl?JSON.parse(glyphEl.textContent):{};
+  const src={getKey:()=>"embedded",getBytes:async(offset,length)=>({data:buf.slice(offset,offset+length)})};
+  const proto=new pmtiles.Protocol();
+  proto.add(new pmtiles.PMTiles(src));
+  maplibregl.addProtocol("pmtiles",proto.tile);
+  maplibregl.addProtocol("glyphs",async params=>{
+    const key=decodeURIComponent(params.url.slice("glyphs://".length));
+    return {data:glyphs[key]?b64buf(glyphs[key]):new ArrayBuffer(0)};
+  });
+  offlineReady=true;return true;
+}
+function offlineStyle(){
+  const flavor=basemaps.namedFlavor(dark.matches?"dark":"light");
+  return {version:8,glyphs:"glyphs://{fontstack}/{range}",
+    sources:{protomaps:{type:"vector",url:"pmtiles://embedded",attribution:'<a href="https://protomaps.com">Protomaps</a> &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>'}},
+    layers:basemaps.layers("protomaps",flavor,{lang:META.mapLang||"en"})};
+}
+function setOfflineTiles(){
+  if(!initOffline())return;
+  if(tiles)map.removeLayer(tiles);
+  map.setMaxZoom(19);
+  tiles=L.maplibreGL({style:offlineStyle(),interactive:false,padding:.3}).addTo(map);
+}
 map.createPane("base");map.getPane("base").style.zIndex=150;
 const baseR=L.canvas({pane:"base",padding:.5});let baseLayer=null;
 function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()}
@@ -1066,7 +1093,7 @@ function showCard(p,pt,pin){
   card.style.left=x+"px";card.style.top=y+"px";
   loadPhotos(p).then(list=>{
     const ph=document.getElementById("ph");if(!ph||card.dataset.cur!==p.id)return;
-    if(photosBlocked&&!list.length){ph.remove();return}
+    if((photosBlocked||META.offline)&&!list.length){ph.remove();return}
     ph.innerHTML=list.length?list.map(i=>`<a href="${i.page}" target="_blank" rel="noopener"><img src="${i.src}" alt="" loading="lazy"></a>`).join(""):'<span class="ph-msg">Рядом нет фото на Wikimedia. Открой Google Maps ↗</span>';
   });
   card.dataset.cur=p.id;
@@ -1079,6 +1106,8 @@ async function jget(u){const r=await fetch(u);return r.json()}
 // Photos: Wikipedia page image (place.w = article title) + Wikimedia Commons geosearch around the point.
 async function loadPhotos(p){
   if(photoCache[p.id])return photoCache[p.id];
+  if(p.ph&&p.ph.length){photoCache[p.id]=p.ph;return p.ph}
+  if(META.offline){photoCache[p.id]=[];return []}
   if(META.photos===false){photosBlocked=true;return []}
   const out=[];const seen=new Set();
   try{
